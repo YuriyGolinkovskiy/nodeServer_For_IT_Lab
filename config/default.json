@@ -3,5 +3,6 @@
     "smtpHost": "smtp.gmail.com",
     "smtpPort": 587,
     "smtpUser": "My3Test3Mail3@gmail.com",
-    "smtpPassword": "SojkMA6G5KDZ"
+    "smtpPassword": "SojkMA6G5KDZ",
+    "db_url": "mongodb+srv://admin:HomtisfQBxPwbiEd@cluster0.x7vet.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }

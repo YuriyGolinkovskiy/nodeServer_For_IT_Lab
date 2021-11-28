@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import mainController from '../controllers/mainController.js';
 import itemController from '../controllers/itemController.js';
+import fileController from '../controllers/fileController.js';
+import MyError from '../middlewares/myError.js';
 
 const router = Router();
 
@@ -13,9 +15,24 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/getProducts', itemController.getProducts);
+router.get('/getProduct/:id', itemController.getProduct);
+router.post('/addProduct', itemController.addProduct);
+router.put('/updateProduct', itemController.updateProduct);
+router.delete('/deleteProduct/:id', itemController.deleteProduct);
 
-router.post('/getProductsForCatalog', itemController.getProductsForCatalog);
+router.get(
+    '/getProductsForCatalog/:catalogId',
+    itemController.getProductsForCatalog
+);
 
 router.get('/getCatalogs', itemController.getCatalogs);
+router.get('/getCatalog/:id', itemController.getCatalog);
+router.post('/addCatalog', itemController.addCatalog);
+router.put('/updateCatalog', itemController.updateCatalog);
+router.delete('/deleteCatalog/:id', itemController.deleteCatalog);
+
+router.get('/getHeaders', itemController.getHeaders);
+
+router.post('/loadFiles', fileController.loadFiles);
 
 export default router;
