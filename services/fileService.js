@@ -33,6 +33,7 @@ class FileService {
                                 );
                                 break;
                             case 'jpg':
+                            case 'jpeg':
                             case 'png':
                             case 'bmp':
                                 filePath = path.resolve('static/img', fileName);
