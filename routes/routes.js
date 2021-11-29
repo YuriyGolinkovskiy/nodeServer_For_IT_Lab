@@ -2,7 +2,6 @@ import { Router } from 'express';
 import mainController from '../controllers/mainController.js';
 import itemController from '../controllers/itemController.js';
 import fileController from '../controllers/fileController.js';
-import MyError from '../middlewares/myError.js';
 
 const router = Router();
 
@@ -34,5 +33,10 @@ router.delete('/deleteCatalog/:id', itemController.deleteCatalog);
 router.get('/getHeaders', itemController.getHeaders);
 
 router.post('/loadFiles', fileController.loadFiles);
+router.get('/getFiles', fileController.getFiles);
+router.get('/getImg', fileController.getImg);
+router.get('/getDocument', fileController.getDocument);
+router.get('/getAudio', fileController.getAudio);
+router.get('/getOther', fileController.getOther);
 
 export default router;
