@@ -1,8 +1,8 @@
 import catalogService from '../services/catalogService.js';
 import productService from '../services/productService.js';
 import MyError from '../middlewares/myError.js';
-import { Catalog } from '../database/Catalog.js';
-import { Product } from '../database/Product.js';
+import Catalog from '../database/catalog.js';
+import Product from '../database/product.js';
 
 class itemController {
     async addCatalog(req, res, next) {
