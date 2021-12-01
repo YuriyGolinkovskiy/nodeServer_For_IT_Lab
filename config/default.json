@@ -2,7 +2,7 @@
     "serverPort": 8888,
     "smtpHost": "smtp.gmail.com",
     "smtpPort": 587,
-    "smtpUser": "My3Test3Mail3@gmail.com",
-    "smtpPassword": "SojkMA6G5KDZ",
+    "smtpUser": "test1Akkount1@gmail.com",
+    "smtpPassword": "pgq8hbPWGt",
     "db_url": "mongodb+srv://admin:HomtisfQBxPwbiEd@cluster0.x7vet.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
